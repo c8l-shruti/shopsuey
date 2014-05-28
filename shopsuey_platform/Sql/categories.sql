@@ -1,0 +1,21 @@
+SET NAMES utf8;
+
+INSERT INTO suey_categories (name, created_at, updated_at) VALUES ("Accessories & Jewelry", UNIX_TIMESTAMP(), UNIX_TIMESTAMP());
+INSERT INTO suey_categories (name, created_at, updated_at) VALUES ("Books, Cards & Gifts", UNIX_TIMESTAMP(), UNIX_TIMESTAMP());
+INSERT INTO suey_categories (name, created_at, updated_at) VALUES ("Department Stores", UNIX_TIMESTAMP(), UNIX_TIMESTAMP());
+INSERT INTO suey_categories (name, created_at, updated_at) VALUES ("Dining and Entertainment", UNIX_TIMESTAMP(), UNIX_TIMESTAMP());
+INSERT INTO suey_categories (name, created_at, updated_at) VALUES ("Electronics & Entertainment", UNIX_TIMESTAMP(), UNIX_TIMESTAMP());
+INSERT INTO suey_categories (name, created_at, updated_at) VALUES ("Food Specialty", UNIX_TIMESTAMP(), UNIX_TIMESTAMP());
+INSERT INTO suey_categories (name, created_at, updated_at) VALUES ("Health & Beauty", UNIX_TIMESTAMP(), UNIX_TIMESTAMP());
+INSERT INTO suey_categories (name, created_at, updated_at) VALUES ("Home Furnishings & Décor", UNIX_TIMESTAMP(), UNIX_TIMESTAMP());
+INSERT INTO suey_categories (name, created_at, updated_at) VALUES ("Infants' & Children's Fashions", UNIX_TIMESTAMP(), UNIX_TIMESTAMP());
+INSERT INTO suey_categories (name, created_at, updated_at) VALUES ("Luggage & Handbags", UNIX_TIMESTAMP(), UNIX_TIMESTAMP());
+INSERT INTO suey_categories (name, created_at, updated_at) VALUES ("Men's Fashions", UNIX_TIMESTAMP(), UNIX_TIMESTAMP());
+INSERT INTO suey_categories (name, created_at, updated_at) VALUES ("Optical/Eyewear", UNIX_TIMESTAMP(), UNIX_TIMESTAMP());
+INSERT INTO suey_categories (name, created_at, updated_at) VALUES ("Services", UNIX_TIMESTAMP(), UNIX_TIMESTAMP());
+INSERT INTO suey_categories (name, created_at, updated_at) VALUES ("Shoes", UNIX_TIMESTAMP(), UNIX_TIMESTAMP());
+INSERT INTO suey_categories (name, created_at, updated_at) VALUES ("Specialty Stores", UNIX_TIMESTAMP(), UNIX_TIMESTAMP());
+INSERT INTO suey_categories (name, created_at, updated_at) VALUES ("Sporting Goods & Athletic Wear", UNIX_TIMESTAMP(), UNIX_TIMESTAMP());
+INSERT INTO suey_categories (name, created_at, updated_at) VALUES ("Teen Fashions", UNIX_TIMESTAMP(), UNIX_TIMESTAMP());
+INSERT INTO suey_categories (name, created_at, updated_at) VALUES ("Toys & Hobbies", UNIX_TIMESTAMP(), UNIX_TIMESTAMP());
+INSERT INTO suey_categories (name, created_at, updated_at) VALUES ("Women's Fashions", UNIX_TIMESTAMP(), UNIX_TIMESTAMP());

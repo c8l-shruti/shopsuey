@@ -1,0 +1,228 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #666666;
+}
+
+body.background {
+    background: url(images/background-no-logo.png) no-repeat right center fixed; 
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+} 
+
+body.background.with-logo {
+    background-image: url(images/background.png)
+}
+
+
+/*
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    
+    .content {
+        padding:0px;
+        left:15%;
+        top:7%;
+        position: absolute;
+    }
+
+    .content .login-wrapper {
+        width: 320px;
+    }
+}
+*/
+@media only screen and (min-width: 480px) {
+ 
+    .content {
+        padding:0px;
+        left:15%;
+        top:7%;
+        position: absolute;
+    }
+
+    .content .login-wrapper {
+        width: 320px;
+    }
+    
+    
+}
+
+
+
+.content .login-wrapper img.logo {
+    display: block;
+    margin: 20px auto;
+}
+
+.content .login-wrapper input[type=email], .content .login-wrapper input[type=password],
+.content .login-wrapper input[type=text], .content .login-wrapper select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #bbbbbb;
+    border-radius:3px;
+    color: #0F0F0F;
+    display: block;
+    margin: 9px auto;
+    width: 250px;
+    background: white;
+}
+
+.content .login-wrapper select {
+    color: #666666;
+}
+
+.content .login-wrapper .actionsWrapper {
+    text-align: center;
+}
+
+.content .login-wrapper .forgotPass {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin:20px;
+}
+
+.content .login-wrapper input[type=submit] {
+    color: #aa22bb;
+    background: none;
+    cursor: pointer;
+}
+
+.content .login-wrapper .create-account {
+    color: #cc4400;
+}
+
+.content .login-wrapper .terms {
+    width:350px;
+    display: block;
+    height: 100px;
+    overflow-y: scroll;
+    font-size:14px;
+    border: 1px solid #bbbbbb;
+    padding:5px;
+    margin: 10px auto;
+}
+
+.content .login-wrapper .terms-checkbox-wrapper {
+    text-align: center;
+    margin-top:20px;
+}
+
+.content .login-wrapper .terms-actions-wrapper {
+    margin:auto;
+    width:365px;
+}
+
+.content .login-wrapper .terms-actions-wrapper a, .content .login-wrapper .img-actions-wrapper a {
+    width: 170px;
+    padding:5px;
+    border-radius: 5px;
+    background: black;
+    color:white;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+}
+
+.content .login-wrapper .step-counter {
+    text-align: center;
+    font-weight: 100;
+    font-size:22px;
+    margin: 20px auto;
+}
+
+.content .login-wrapper form.profile {
+    text-align: center;
+}
+
+.content .business-type-selector {
+    width:390px;
+    margin:10px auto;
+}
+
+.content .business-type-selector label {
+    width:100px;
+    text-align: left;
+}
+
+.content .business-type-selector .business-type-radio-wrapper {
+    width:95px;
+}
+
+.content input.location-field {
+    display: inline-block !important;
+    margin: 9px auto;
+    background: white;
+}
+
+.content .location-field.name {
+    width:90px !important;
+}
+
+.content .location-field.zip {
+    width:70px !important;
+}
+
+.content .location-field.location {
+    width:150px !important;
+}
+
+.content .location-row span {
+    font-size:12px;
+    line-height:14px;
+    display: inline-block;
+    margin-left:5px;
+}
+
+.content h1 {
+    font-size:48px;
+    font-weight: 100;
+    color: #333333;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.content .image-selectors {
+    width: 430px;
+    margin: 10px auto;
+}
+
+.content .ios-device-list-title {
+    color: black;
+    font-size: 10px;
+}
+
+.content .ios-device-title {
+    color: white;
+    font-size:13px;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+}
+
+.content .categories-wrapper input {
+    display: inline-block !important;
+    width: 150px !important;
+}
+
+.big-text {
+    font-size: 42px;
+    font-weight: 100;
+}
+
+.medium-text {
+    font-size:20px;
+    font-weight: 100;
+}
+
+.floatL {
+    float: left;
+}
+
+.floatR {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
