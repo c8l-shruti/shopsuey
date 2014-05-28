@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ShopSuey - Setup your profile</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="newLogin.css">
+    </head>
+    <body class="background">
+
+        <div>
+        </div>
+
+        <div class="content">
+            <h1 style="margin-bottom:20px">Welcome, Forever 21</h1>
+            <div class="login-wrapper">
+
+                <form method="post" class="profile">
+
+                    <p>Let's get you officially setup!</p>
+                    <div class="step-counter">Step 1 of 3</div>
+
+                    <div>
+                        <strong>Select Business Type</strong>
+                        <div class="business-type-selector">
+                            <div class="floatR">
+                                <label for="marketplace" class="floatL">Marketplace</label>
+                                <div>
+                                    <img src="images/business-type-marketplace.png" alt="Marketplace">
+                                </div>
+                                <div class="business-type-radio-wrapper">
+                                    <input type="radio" name="businessType" value="Marketplace" id="marketplace">
+                                </div>
+                            </div>
+                            <div class="floatR">
+                                <label for="merchant" class="floatL">Merchant</label>
+                                <div>
+                                    <img src="images/business-type-merchant.png" alt="Merchant">
+                                </div>
+                                <div class="business-type-radio-wrapper">
+                                    <input type="radio" name="businessType" value="Merchant" id="merchant">
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="mt10"><a href="#">What is my business type?</a></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <select name="numberOfStores">
+                            <option value="0" disabled selected>Select # of stores</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mt20 mb5"><strong>Let's find your locations!</strong></div>
+                    
+                    <div class="location-row">
+                        <input class="location-field name" type="text" value="Forever 21" placeholder="Name" name="name[0]">
+                        <input class="location-field zip" type="text" value="96814" placeholder="ZIP" name="zip[0]">
+                        <input class="location-field location" type="text" value="Ala Moana" placeholder="Location" name="location[0]">
+                        <span>
+                            Yup, this<br>is me<br><input type="radio" name="validated[0]">
+                        </span>
+                        <span>
+                            Nope, I'll do<br>it manually<br><input checked type="radio" name="validated[0]">
+                        </span>
+                    </div>
+                    
+                    <div class="location-row">
+                        <input disabled class="location-field name" type="text" value="Forever 21" placeholder="Name" name="name[1]">
+                        <input disabled class="location-field zip" type="text" value="96814" placeholder="ZIP" name="zip[1]">
+                        <input disabled class="location-field location" type="text" value="Westfield Center" placeholder="Location" name="location[1]">
+                        <span>
+                            Yup, this<br>is me<br><input checked type="radio" name="validated[1]">
+                        </span>
+                        <span>
+                            Nope, I'll do<br>it manually<br><input type="radio" name="validated[1]">
+                        </span>
+                    </div>
+                    
+                    <div class="location-row">
+                        <input class="location-field name" type="text" value="Forever 21" placeholder="Name" name="name[2]">
+                        <input class="location-field zip" type="text" value="96814" placeholder="ZIP" name="zip[2]">
+                        <input class="location-field location" type="text" value="Another Mall" placeholder="Location" name="location[2]">
+                        <span>
+                            Yup, this<br>is me<br><input type="radio" name="validated[2]">
+                        </span>
+                        <span>
+                            Nope, I'll do<br>it manually<br><input checked type="radio" name="validated[2]">
+                        </span>
+                    </div>
+                    
+                    <div class="mt15 mb5"><strong>Social media links</strong></div>
+                    <div>
+                        <input type="text" placeholder="Your Facebook URL" name="facebook">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Your Twitter URL" name="twitter">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Your Instagram URL" name="instagram">
+                    </div>
+
+                    <div class="actionsWrapper">
+                        <div class="mt25">
+                            <input class="big-text" type="submit" value="Next" name="submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

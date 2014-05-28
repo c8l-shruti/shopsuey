@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ShopSuey - Payment Information</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="newLogin.css">
+    </head>
+    <body class="background">
+        
+        <style>
+            p {
+                text-align: center; 
+                margin-bottom:10px;
+            }
+        </style>
+
+        <div class="content">
+            <div class="login-wrapper">
+                <div class="step-counter">Step 3 of 3</div>
+                <p>
+                    ShopSuey requires a one time setup fee of $250 and recurring monthly payment
+                    of $5.99 per store. <br>
+                    Click here to view what's included into your subscription fee. Feel free to
+                    change your membership or update account info at any time!
+                </p>
+                <p>
+                    <strong>
+                    Enjoy a 14 day free trial by signing up now!
+                    </strong>
+                </p>
+                
+                <form method="post">
+                    <div>
+                        <input type="text" maxlength="16" placeholder="Credit Card Number" name="ccNumber">
+                    </div>
+                    <div>
+                        <input type="text" maxlength="4" placeholder="Exp. Date (MMYY)" name="ccExpiration">
+                    </div>
+                    <div>
+                        <input type="text" maxlength="4" placeholder="Security Code" name="ccSecurityCode">
+                    </div>
+                    <div style="text-align: center">
+                        <strong>Billing Address</strong>
+                    </div>
+                    <div>
+                        <input type="text" maxlength="30" placeholder="Address" name="billingAddress">
+                    </div>
+                    <div>
+                        <input type="text" maxlength="30" placeholder="City" name="billingCity">
+                    </div>
+                    <div>
+                        <input type="text" maxlength="30" placeholder="State" name="billingState">
+                    </div>
+                    <div>
+                        <input type="text" maxlength="5" placeholder="Zip Code" name="billingZip">
+                    </div>
+                    
+                    <div class="terms-checkbox-wrapper mb15">
+                        <input type="checkbox" id="privacy" name="privacy" checked>
+                        <label for="privacy">I have read and agree to the <a href="http://www.getshopsueyapp.com/policy">privacy policy</a> and <a href="http://www.getshopsueyapp.com/refund-policy">refund policy</a></label>
+                    </div>
+
+                    <p>
+                        Questions? <a href="mailto:sales@thesuey.com">sales@thesuey.com</a> or call us at 415.218.3348
+                    </p>
+                    
+                    <div class="actionsWrapper">
+                        <div class="mt25">
+                            <input class="big-text" type="submit" value="Submit" name="submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
