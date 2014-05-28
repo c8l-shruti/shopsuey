@@ -1,0 +1,583 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>ShopSuey | CMS</title>
+
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<!--[if IE]> <link href="css/ie.css" rel="stylesheet" type="text/css"> <![endif]-->
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/plugins/forms/ui.spinner.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.mousewheel.js"></script>
+ 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="js/plugins/charts/excanvas.min.js"></script>
+<script type="text/javascript" src="js/plugins/charts/jquery.flot.js"></script>
+<script type="text/javascript" src="js/plugins/charts/jquery.flot.orderBars.js"></script>
+<script type="text/javascript" src="js/plugins/charts/jquery.flot.pie.js"></script>
+<script type="text/javascript" src="js/plugins/charts/jquery.flot.resize.js"></script>
+<script type="text/javascript" src="js/plugins/charts/jquery.sparkline.min.js"></script>
+
+<script type="text/javascript" src="js/plugins/tables/jquery.dataTables.js"></script>
+<script type="text/javascript" src="js/plugins/tables/jquery.sortable.js"></script>
+<script type="text/javascript" src="js/plugins/tables/jquery.resizable.js"></script>
+
+<script type="text/javascript" src="js/plugins/forms/autogrowtextarea.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.uniform.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.inputlimiter.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.tagsinput.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.autotab.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.chosen.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.dualListBox.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.cleditor.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.ibutton.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.validationEngine-en.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.validationEngine.js"></script>
+
+<script type="text/javascript" src="js/plugins/uploader/plupload.js"></script>
+<script type="text/javascript" src="js/plugins/uploader/plupload.html4.js"></script>
+<script type="text/javascript" src="js/plugins/uploader/plupload.html5.js"></script>
+<script type="text/javascript" src="js/plugins/uploader/jquery.plupload.queue.js"></script>
+
+<script type="text/javascript" src="js/plugins/wizards/jquery.form.wizard.js"></script>
+<script type="text/javascript" src="js/plugins/wizards/jquery.validate.js"></script>
+<script type="text/javascript" src="js/plugins/wizards/jquery.form.js"></script>
+
+<script type="text/javascript" src="js/plugins/ui/jquery.collapsible.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.breadcrumbs.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.tipsy.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.progress.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.timeentry.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.colorpicker.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.jgrowl.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.fancybox.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.fileTree.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.sourcerer.js"></script>
+
+<script type="text/javascript" src="js/plugins/others/jquery.fullcalendar.js"></script>
+<script type="text/javascript" src="js/plugins/others/jquery.elfinder.js"></script>
+
+<script type="text/javascript" src="js/plugins/ui/jquery.easytabs.min.js"></script>
+<script type="text/javascript" src="js/files/bootstrap.js"></script>
+
+<script type="text/javascript" src="js/files/events.js"></script>
+</head>
+
+<body>
+
+<!-- Sidebar begins -->
+<div id="sidebar">
+    <div class="mainNav">        
+        <!-- Main nav -->
+        <ul class="nav">
+            <li><a href="concept.html" title=""><img src="images/icons/mainnav/dashboard.png" alt="" /><span>Dashboard</span></a></li>
+            <li><a href="messages-concept.html" title=""><img src="images/icons/mainnav/comments.png" alt="" /><span>Messages</span></a></li>
+            <li><a href="#" data-menu="#sub-menu-events" title="" class="btn active"><img src="images/icons/mainnav/calendar.png" alt="" /><span>Events</span></a></li>
+            <li><a href="#" data-menu="#sub-menu-users" title="" class="btn"><img src="images/icons/mainnav/deals.png" alt="" /><span>Deals</span></a></li>
+            <li><a href="#" data-menu="#sub-menu-local" title="" class="btn"><img src="images/icons/mainnav/locate.png" alt="" /><span>Locations</span></a></li>
+            <li><a href="#" data-menu="#sub-menu-stats" title="" class="btn"><img src="images/icons/mainnav/chart.png" alt="" /><span>Statistics</span></a></li>
+            <li><a href="#" data-menu="#sub-menu-admin" title="" class="btn"><img src="images/icons/mainnav/other.png" alt="" /><span>App Admin</span></a></li>
+        </ul>
+    </div>
+    
+    <!-- Secondary nav -->
+    <div class="secNav">
+        <div class="secWrapper">
+            <div class="secTop">
+            	<div class="logo">
+            		<a href="index.html" title=""><img src="images/logo.png" alt="" /></a>
+                </div>
+            </div>
+           	<div id="sub-menu-events" class="sub-menu">
+                <div class="hdr noBorderT">
+                	<span class="iconb" data-icon="&#xe206;"></span>
+                    <span class="text">System Notifications</span>
+                </div>
+                <ul class="list notifications omega">
+                	<li><a href="#">Events server will be under...</a></li>
+                    <li><a href="#">Enhanced GPS positioning...</a></li>
+                </ul>
+                
+                <div class="divider"><span></span></div>  
+                
+                <div class="textC">
+                    <a class="buttonS bGold" href="event-edit-concept.html">
+                    	<span class="icon-plus-2"></span>
+                        <span>New Event</span>
+                    </a>
+                </div>                                 
+           	</div>
+
+       </div>
+       <div class="clear"></div>
+   </div>
+</div>
+<!-- Sidebar ends -->
+    
+    
+<!-- Content begins -->
+<div id="content">
+    <div class="contentTop">
+        <span class="pageTitle"><span class="icon-calender"></span>Events</span>
+        <ul class="quickStats">
+            <li>
+                <a href="" class="orangeImg"><img src="images/icons/quickstats/plus.png" alt="" /></a>
+                <div class="floatR"><strong class="blue">5489</strong><span>views</span></div>
+            </li>
+            <li>
+                <a href="" class="redImg"><img src="images/icons/quickstats/user.png" alt="" /></a>
+                <div class="floatR"><strong class="blue">4658</strong><span>checkins</span></div>
+            </li>
+            <li>
+                <a href="" class="purpleImg"><img src="images/icons/quickstats/money.png" alt="" /></a>
+                <div class="floatR"><strong class="blue">1289</strong><span>deals</span></div>
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    
+    <!-- Breadcrumbs line -->
+    <div class="breadLine">
+
+        <div class="bc">
+            <ul id="breadcrumbs" class="breadcrumbs">
+                <li><a href="concept.html">Dashboard</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
+        </div>
+        
+        <div class="breadLinks">
+            <ul>
+                <li>
+                	<a href="#" title="">
+                	<i class="icon-user-3"></i>
+                    <span>Company Profile</span>
+                    <span><img src="images/elements/control/hasddArrow.png" alt=""></span>
+                    </a>
+                </li>
+                <li class="has">
+                    <a title="">
+                        <i class="icon-user-2"></i>
+                        <span>My Profile</span>
+                        <span><img src="images/elements/control/hasddArrow.png" alt=""></span>
+                    </a>
+                    <ul style="display: none;">
+                        <li><a href="#" title=""><span class="icos-add"></span>New invoice</a></li>
+                        <li><a href="#" title=""><span class="icos-archive"></span>History</a></li>
+                        <li class="noBorderB"><a href="#" title=""><span class="icos-printer"></span>Print invoices</a></li>
+                    </ul>
+                </li>
+            </ul>
+             <div class="clear"></div>
+        </div>
+        
+    </div>
+    
+    <!-- Main content -->
+    <div class="wrapper">
+    
+        <!-- Notice -->
+        <!--//
+    	<div class="fluid">
+            <div class="nNote nWarning">
+                <p>This is a warning message. You can use this to warn users on any events</p>
+            </div>
+        </div>
+        //-->
+        <!-- Nav -->
+        <ul class="middleNavS">
+        	<li><a original-title="Dashboard" href="concept.html" class="tipN"><img src="images/icons/middlenav/dashboard.png" alt=""></a></li>
+            <li><a original-title="Messages" href="messages-concept.html" class="tipN"><img src="images/icons/middlenav/comments.png" alt=""></a><strong>5</strong></li>
+            <li><a original-title="Events" href="#" class="tipN active"><img src="images/icons/middlenav/calendar.png" alt=""></a></li>
+            <li><a original-title="Upload files" href="#" class="tipN"><img src="images/icons/middlenav/deals.png" alt=""></a></li>
+            <li><a original-title="Add something" href="#" class="tipN"><img src="images/icons/middlenav/locate.png" alt=""></a></li>
+            <li><a original-title="Check statistics" href="#" class="tipN"><img src="images/icons/middlenav/chart.png" alt=""></a></li>
+                
+        </ul>
+            
+        <!-- Events -->
+        <div class="widget check">
+            <div class="whead">
+            	<span class="floatR">
+                    <a class="buttonS bGold" href="event-edit-concept.html" style="margin: 5px 85px -6px 0">
+                    	<span class="icon-plus-2"></span>
+                        <span>New Event</span>
+                    </a>                
+                </span>
+            	<span class="titleIcon" style="width: 60px"><input type="checkbox" id="titleCheck" name="titleCheck" data-table="#events-list"/></span>
+                <div class="floatL" style="margin: 5px 5px 0 5px">
+                    <select>
+                        <option>Select action...</option>
+                        <option>Delete events</option>
+                        <option>Set as drafts</option>
+                        <option>Set published</option>
+                    </select>
+                </div>
+                <div class="floatL" style="margin: 5px 0 0 0">
+                	<a href="#" class="buttonS bDefault" style="color: #888 !important;">Apply</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="tOptions" style="margin-right: 39px;">
+                <a href="#" id="calendar-open"><span class="icon-calender" style="margin: 0; padding: 0; line-height: 16px; font-size: 14px; color: #909090"></span></a>
+            </div>
+            <div class="tOptions">
+                <a href="#" class="search-toggle"><img src="images/icons/options.png" alt="" /></a>
+            </div>
+            <div class="shownpars">
+                <table cellpadding="0" cellspacing="0" border="0" class="dTable" id="events-list">
+                    <thead>
+                        <tr>
+                            <td width="30"><img src="images/elements/other/tableArrows.png" alt="" /></td>
+                            <td class="sortCol"><div>Event</div></td>
+                            <td width="130" class="sortCol"><div>Date</div></td>
+                            <td width="100" align="center">Actions</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="textC" style="vertical-align: middle !important"><input type="checkbox" name="checkRow" /></td>
+                            <td style="vertical-align: middle !important">
+                            	<h6>4th of July Sale</h6>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel est enim, vel eleifend felis.
+                            </td>
+                            <td style="vertical-align: middle !important">Jul. 4, 2012</td>
+                            <td class="tableActs" style="vertical-align: middle !important">
+                                <a href="#" class="tablectrl_small bGold tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                                <a href="#" class="tablectrl_small bGreyish tipS" title="Options"><span class="iconb" data-icon="&#xe1f7;"></span></a>
+                                <a href="#" class="tablectrl_small bRed tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="textC" style="vertical-align: middle !important"><input type="checkbox" name="checkRow" /></td>
+                            <td style="vertical-align: middle !important">
+                            	<h6>2 Day Sale</h6>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel est enim, vel eleifend felis.
+                            </td>
+                            <td style="vertical-align: middle !important">Jul. 21, 2012</td>
+                            <td class="tableActs" style="vertical-align: middle !important">
+                                <a href="#" class="tablectrl_small bGold tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                                <a href="#" class="tablectrl_small bGreyish tipS" title="Options"><span class="iconb" data-icon="&#xe1f7;"></span></a>
+                                <a href="#" class="tablectrl_small bRed tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="textC" style="vertical-align: middle !important"><input type="checkbox" name="checkRow" /></td>
+                            <td style="vertical-align: middle !important">
+                            	<h6>Summer Clearance Sale</h6>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel est enim, vel eleifend felis.
+                            </td>
+                            <td style="vertical-align: middle !important">Jul. 15, 2012</td>
+                            <td class="tableActs" style="vertical-align: middle !important">
+                                <a href="#" class="tablectrl_small bGold tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                                <a href="#" class="tablectrl_small bGreyish tipS" title="Options"><span class="iconb" data-icon="&#xe1f7;"></span></a>
+                                <a href="#" class="tablectrl_small bRed tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="textC" style="vertical-align: middle !important"><input type="checkbox" name="checkRow" /></td>
+                            <td style="vertical-align: middle !important">
+                            	<h6>Ala Moana Grand Opening</h6>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel est enim, vel eleifend felis.
+                            </td>
+                            <td style="vertical-align: middle !important">Jul. 25, 2012</td>
+                            <td class="tableActs" style="vertical-align: middle !important">
+                                <a href="#" class="tablectrl_small bGold tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                                <a href="#" class="tablectrl_small bGreyish tipS" title="Options"><span class="iconb" data-icon="&#xe1f7;"></span></a>
+                                <a href="#" class="tablectrl_small bRed tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="textC" style="vertical-align: middle !important"><input type="checkbox" name="checkRow" /></td>
+                            <td style="vertical-align: middle !important">
+                            	<h6>4th of July Sale</h6>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel est enim, vel eleifend felis.
+                            </td>
+                            <td style="vertical-align: middle !important">Jul. 4, 2012</td>
+                            <td class="tableActs" style="vertical-align: middle !important">
+                                <a href="#" class="tablectrl_small bGold tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                                <a href="#" class="tablectrl_small bGreyish tipS" title="Options"><span class="iconb" data-icon="&#xe1f7;"></span></a>
+                                <a href="#" class="tablectrl_small bRed tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="textC" style="vertical-align: middle !important"><input type="checkbox" name="checkRow" /></td>
+                            <td style="vertical-align: middle !important">
+                            	<h6>2 Day Sale</h6>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel est enim, vel eleifend felis.
+                            </td>
+                            <td style="vertical-align: middle !important">Jul. 21, 2012</td>
+                            <td class="tableActs" style="vertical-align: middle !important">
+                                <a href="#" class="tablectrl_small bGold tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                                <a href="#" class="tablectrl_small bGreyish tipS" title="Options"><span class="iconb" data-icon="&#xe1f7;"></span></a>
+                                <a href="#" class="tablectrl_small bRed tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="textC" style="vertical-align: middle !important"><input type="checkbox" name="checkRow" /></td>
+                            <td style="vertical-align: middle !important">
+                            	<h6>Summer Clearance Sale</h6>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel est enim, vel eleifend felis.
+                            </td>
+                            <td style="vertical-align: middle !important">Jul. 15, 2012</td>
+                            <td class="tableActs" style="vertical-align: middle !important">
+                                <a href="#" class="tablectrl_small bGold tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                                <a href="#" class="tablectrl_small bGreyish tipS" title="Options"><span class="iconb" data-icon="&#xe1f7;"></span></a>
+                                <a href="#" class="tablectrl_small bRed tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="textC" style="vertical-align: middle !important"><input type="checkbox" name="checkRow" /></td>
+                            <td style="vertical-align: middle !important">
+                            	<h6>Ala Moana Grand Opening</h6>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel est enim, vel eleifend felis.
+                            </td>
+                            <td style="vertical-align: middle !important">Jul. 25, 2012</td>
+                            <td class="tableActs" style="vertical-align: middle !important">
+                                <a href="#" class="tablectrl_small bGold tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                                <a href="#" class="tablectrl_small bGreyish tipS" title="Options"><span class="iconb" data-icon="&#xe1f7;"></span></a>
+                                <a href="#" class="tablectrl_small bRed tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="textC" style="vertical-align: middle !important"><input type="checkbox" name="checkRow" /></td>
+                            <td style="vertical-align: middle !important">
+                            	<h6>4th of July Sale</h6>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel est enim, vel eleifend felis.
+                            </td>
+                            <td style="vertical-align: middle !important">Jul. 4, 2012</td>
+                            <td class="tableActs" style="vertical-align: middle !important">
+                                <a href="#" class="tablectrl_small bGold tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                                <a href="#" class="tablectrl_small bGreyish tipS" title="Options"><span class="iconb" data-icon="&#xe1f7;"></span></a>
+                                <a href="#" class="tablectrl_small bRed tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="textC" style="vertical-align: middle !important"><input type="checkbox" name="checkRow" /></td>
+                            <td style="vertical-align: middle !important">
+                            	<h6>2 Day Sale</h6>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel est enim, vel eleifend felis.
+                            </td>
+                            <td style="vertical-align: middle !important">Jul. 21, 2012</td>
+                            <td class="tableActs" style="vertical-align: middle !important">
+                                <a href="#" class="tablectrl_small bGold tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                                <a href="#" class="tablectrl_small bGreyish tipS" title="Options"><span class="iconb" data-icon="&#xe1f7;"></span></a>
+                                <a href="#" class="tablectrl_small bRed tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="textC" style="vertical-align: middle !important"><input type="checkbox" name="checkRow" /></td>
+                            <td style="vertical-align: middle !important">
+                            	<h6>Summer Clearance Sale</h6>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel est enim, vel eleifend felis.
+                            </td>
+                            <td style="vertical-align: middle !important">Jul. 15, 2012</td>
+                            <td class="tableActs" style="vertical-align: middle !important">
+                                <a href="#" class="tablectrl_small bGold tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                                <a href="#" class="tablectrl_small bGreyish tipS" title="Options"><span class="iconb" data-icon="&#xe1f7;"></span></a>
+                                <a href="#" class="tablectrl_small bRed tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="textC" style="vertical-align: middle !important"><input type="checkbox" name="checkRow" /></td>
+                            <td style="vertical-align: middle !important">
+                            	<h6>Ala Moana Grand Opening</h6>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel est enim, vel eleifend felis.
+                            </td>
+                            <td style="vertical-align: middle !important">Jul. 25, 2012</td>
+                            <td class="tableActs" style="vertical-align: middle !important">
+                                <a href="#" class="tablectrl_small bGold tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                                <a href="#" class="tablectrl_small bGreyish tipS" title="Options"><span class="iconb" data-icon="&#xe1f7;"></span></a>
+                                <a href="#" class="tablectrl_small bRed tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="textC" style="vertical-align: middle !important"><input type="checkbox" name="checkRow" /></td>
+                            <td style="vertical-align: middle !important">
+                            	<h6>4th of July Sale</h6>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel est enim, vel eleifend felis.
+                            </td>
+                            <td style="vertical-align: middle !important">Jul. 4, 2012</td>
+                            <td class="tableActs" style="vertical-align: middle !important">
+                                <a href="#" class="tablectrl_small bGold tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                                <a href="#" class="tablectrl_small bGreyish tipS" title="Options"><span class="iconb" data-icon="&#xe1f7;"></span></a>
+                                <a href="#" class="tablectrl_small bRed tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="textC" style="vertical-align: middle !important"><input type="checkbox" name="checkRow" /></td>
+                            <td style="vertical-align: middle !important">
+                            	<h6>2 Day Sale</h6>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel est enim, vel eleifend felis.
+                            </td>
+                            <td style="vertical-align: middle !important">Jul. 21, 2012</td>
+                            <td class="tableActs" style="vertical-align: middle !important">
+                                <a href="#" class="tablectrl_small bGold tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                                <a href="#" class="tablectrl_small bGreyish tipS" title="Options"><span class="iconb" data-icon="&#xe1f7;"></span></a>
+                                <a href="#" class="tablectrl_small bRed tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="textC" style="vertical-align: middle !important"><input type="checkbox" name="checkRow" /></td>
+                            <td style="vertical-align: middle !important">
+                            	<h6>Summer Clearance Sale</h6>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel est enim, vel eleifend felis.
+                            </td>
+                            <td style="vertical-align: middle !important">Jul. 15, 2012</td>
+                            <td class="tableActs" style="vertical-align: middle !important">
+                                <a href="#" class="tablectrl_small bGold tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                                <a href="#" class="tablectrl_small bGreyish tipS" title="Options"><span class="iconb" data-icon="&#xe1f7;"></span></a>
+                                <a href="#" class="tablectrl_small bRed tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="textC" style="vertical-align: middle !important"><input type="checkbox" name="checkRow" /></td>
+                            <td style="vertical-align: middle !important">
+                            	<h6>Ala Moana Grand Opening</h6>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel est enim, vel eleifend felis.
+                            </td>
+                            <td style="vertical-align: middle !important">Jul. 25, 2012</td>
+                            <td class="tableActs" style="vertical-align: middle !important">
+                                <a href="#" class="tablectrl_small bGold tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                                <a href="#" class="tablectrl_small bGreyish tipS" title="Options"><span class="iconb" data-icon="&#xe1f7;"></span></a>
+                                <a href="#" class="tablectrl_small bRed tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="textC" style="vertical-align: middle !important"><input type="checkbox" name="checkRow" /></td>
+                            <td style="vertical-align: middle !important">
+                            	<h6>4th of July Sale</h6>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel est enim, vel eleifend felis.
+                            </td>
+                            <td style="vertical-align: middle !important">Jul. 4, 2012</td>
+                            <td class="tableActs" style="vertical-align: middle !important">
+                                <a href="#" class="tablectrl_small bGold tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                                <a href="#" class="tablectrl_small bGreyish tipS" title="Options"><span class="iconb" data-icon="&#xe1f7;"></span></a>
+                                <a href="#" class="tablectrl_small bRed tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="textC" style="vertical-align: middle !important"><input type="checkbox" name="checkRow" /></td>
+                            <td style="vertical-align: middle !important">
+                            	<h6>2 Day Sale</h6>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel est enim, vel eleifend felis.
+                            </td>
+                            <td style="vertical-align: middle !important">Jul. 21, 2012</td>
+                            <td class="tableActs" style="vertical-align: middle !important">
+                                <a href="#" class="tablectrl_small bGold tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                                <a href="#" class="tablectrl_small bGreyish tipS" title="Options"><span class="iconb" data-icon="&#xe1f7;"></span></a>
+                                <a href="#" class="tablectrl_small bRed tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="textC" style="vertical-align: middle !important"><input type="checkbox" name="checkRow" /></td>
+                            <td style="vertical-align: middle !important">
+                            	<h6>Summer Clearance Sale</h6>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel est enim, vel eleifend felis.
+                            </td>
+                            <td style="vertical-align: middle !important">Jul. 15, 2012</td>
+                            <td class="tableActs" style="vertical-align: middle !important">
+                                <a href="#" class="tablectrl_small bGold tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                                <a href="#" class="tablectrl_small bGreyish tipS" title="Options"><span class="iconb" data-icon="&#xe1f7;"></span></a>
+                                <a href="#" class="tablectrl_small bRed tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="textC" style="vertical-align: middle !important"><input type="checkbox" name="checkRow" /></td>
+                            <td style="vertical-align: middle !important">
+                            	<h6>Ala Moana Grand Opening</h6>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel est enim, vel eleifend felis.
+                            </td>
+                            <td style="vertical-align: middle !important">Jul. 25, 2012</td>
+                            <td class="tableActs" style="vertical-align: middle !important">
+                                <a href="#" class="tablectrl_small bGold tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                                <a href="#" class="tablectrl_small bGreyish tipS" title="Options"><span class="iconb" data-icon="&#xe1f7;"></span></a>
+                                <a href="#" class="tablectrl_small bRed tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="textC" style="vertical-align: middle !important"><input type="checkbox" name="checkRow" /></td>
+                            <td style="vertical-align: middle !important">
+                            	<h6>4th of July Sale</h6>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel est enim, vel eleifend felis.
+                            </td>
+                            <td style="vertical-align: middle !important">Jul. 4, 2012</td>
+                            <td class="tableActs" style="vertical-align: middle !important">
+                                <a href="#" class="tablectrl_small bGold tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                                <a href="#" class="tablectrl_small bGreyish tipS" title="Options"><span class="iconb" data-icon="&#xe1f7;"></span></a>
+                                <a href="#" class="tablectrl_small bRed tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="textC" style="vertical-align: middle !important"><input type="checkbox" name="checkRow" /></td>
+                            <td style="vertical-align: middle !important">
+                            	<h6>2 Day Sale</h6>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel est enim, vel eleifend felis.
+                            </td>
+                            <td style="vertical-align: middle !important">Jul. 21, 2012</td>
+                            <td class="tableActs" style="vertical-align: middle !important">
+                                <a href="#" class="tablectrl_small bGold tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                                <a href="#" class="tablectrl_small bGreyish tipS" title="Options"><span class="iconb" data-icon="&#xe1f7;"></span></a>
+                                <a href="#" class="tablectrl_small bRed tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="textC" style="vertical-align: middle !important"><input type="checkbox" name="checkRow" /></td>
+                            <td style="vertical-align: middle !important">
+                            	<h6>Summer Clearance Sale</h6>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel est enim, vel eleifend felis.
+                            </td>
+                            <td style="vertical-align: middle !important">Jul. 15, 2012</td>
+                            <td class="tableActs" style="vertical-align: middle !important">
+                                <a href="#" class="tablectrl_small bGold tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                                <a href="#" class="tablectrl_small bGreyish tipS" title="Options"><span class="iconb" data-icon="&#xe1f7;"></span></a>
+                                <a href="#" class="tablectrl_small bRed tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="textC" style="vertical-align: middle !important"><input type="checkbox" name="checkRow" /></td>
+                            <td style="vertical-align: middle !important">
+                            	<h6>Ala Moana Grand Opening</h6>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel est enim, vel eleifend felis.
+                            </td>
+                            <td style="vertical-align: middle !important">Jul. 25, 2012</td>
+                            <td class="tableActs" style="vertical-align: middle !important">
+                                <a href="#" class="tablectrl_small bGold tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                                <a href="#" class="tablectrl_small bGreyish tipS" title="Options"><span class="iconb" data-icon="&#xe1f7;"></span></a>
+                                <a href="#" class="tablectrl_small bRed tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table> 
+            </div>
+            <div class="clear"></div> 
+        </div>     
+        
+        <!-- end events -->
+        
+    </div>
+    <!-- Main content ends -->
+    
+</div>
+<!-- Content ends -->
+<div id="dialog-calendar" title="Events">
+    <!-- Calendar -->
+    <div class="fluid">
+        <div class="widget grid12" style="margin-top: 0">
+            <div class="whead">
+                <span class="iconb" data-icon="&#xe026;"></span>
+                <h6>Calendar View</h6>
+                <div class="clear"></div>
+            </div>
+            <div id="calendar" class="fc"></div>
+        </div>
+        <div class="clear"></div>
+    </div></div>
+
+</body>
+</html>
