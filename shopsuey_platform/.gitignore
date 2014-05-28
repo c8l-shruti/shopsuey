@@ -1,9 +1,0 @@
-# Eclipse project files
-.buildpath
-.project
-.settings/
-Site/fuel/app/logs
-Site/content/assets/img/
-Site/content/assets/images/offers/
-nbproject/
-.metadata/
