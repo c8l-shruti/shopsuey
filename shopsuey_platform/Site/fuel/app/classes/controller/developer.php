@@ -1,9 +1,4 @@
 <?php
-<?php
-<?php
-<?php
-<?php
-<?php
 
 /**
  * The Developer Controller.
