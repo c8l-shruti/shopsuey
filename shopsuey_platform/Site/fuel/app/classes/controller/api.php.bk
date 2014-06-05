@@ -399,7 +399,7 @@ class Controller_Api extends Controller {
 			->or_where('date_start', 'between', array($current_date, $upcoming_date))
 			->and_where_close()
 			->get();
-//echo \DB::last_query();
+
         $count = 0;
 		$events = array();
 		foreach($event_models as $event_model) {

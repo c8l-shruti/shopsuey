@@ -14,20 +14,14 @@ class Controller_Api_Mall extends Controller_Api {
 	 * Get a single mall
 	 */
 	public function action_get() {
-	
-	
-	 //echo Model_Mall::query();
-
 		$id = $this->param('id', 0);
 		$mall = Model_Mall::query()->where('id', $id)->get_one();
-		 count(Model_Mall::query()->where('id', $id)->get_one());
 		$ajax = Input::get('ajax', 0);
-		//echo $query->get_query();
-	//echo \DB::last_query(); 	;
+		
 		if ($ajax) {
 		    $mall['hours'] = $this->create_hours_groups($mall);
 		}
-		//echo $mall;
+		
 		if ($mall) {
 			$this->response($this->_build_response($mall));
 		} else {
@@ -101,7 +95,7 @@ class Controller_Api_Mall extends Controller_Api {
 		    $query->limit($this->limit)->offset(($page - 1) * $this->limit);
 		}
 
-		 $malls = $query
+		$malls = $query
 		    ->as_object()
     		->execute();
 		
@@ -512,26 +506,23 @@ class Controller_Api_Mall extends Controller_Api {
 	
 	private function _build_response($mall) {
         $offers_count = $this->_get_offers_for_locations(array_merge(array($mall), $mall->merchants), false, false, true);
-         $events_count = $this->_get_events_for_locations(array_merge(array($mall), $mall->merchants), false, false, true);
-  //echo \DB::last_query();exit;  	
+        $events_count = $this->_get_events_for_locations(array_merge(array($mall), $mall->merchants), false, false, true);
+
         $favorites = $this->user_login->user->get_favorite_locations_ids();
         $mall = Helper_Api::location_response($mall, $favorites, true, true);
-          
+        
         // get the merchant count and add it to the response
-         $merchant_count_query = 
+        $merchant_count_query = 
             DB::select(DB::expr('COUNT(1) as count'))
                 ->from(array('locations', 'l1'))
                 ->where('mall_id', $mall->id)
                 ->where('status', 1);
-
+        
         $query_result = $merchant_count_query->execute();
-        //print_r($query_result);
         $mall->merchant_count = (int)$query_result->get('count');
         $mall->offers_count = $offers_count;
-        // Variable for total no of offer + event
-      
-        $mall->events_count = $events_count + $offers_count ;
-       // $mall->events_offer_count = $events_count + $offers_count;
+        $mall->events_count = $events_count;
+        
 		return array(
 			'data' => array('mall' => $mall),
 			'meta' => array('error' => null, 'status' => 1),
